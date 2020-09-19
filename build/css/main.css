@@ -2421,7 +2421,8 @@
  * ------------------------------------------------------------------- */
         
         #download {
-            background: #eee;
+            background-image: url("../images/bg-wallart.jpg");
+            padding: 2em;
             color: #010440;
             padding-top: 12rem;
             padding-bottom: 12rem;
