@@ -1,25 +1,18 @@
 <!DOCTYPE html>
-<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
+
 <html class="no-js" lang="de">
-<!--<![endif]-->
+
 
 <head>
 
-    <!--- basic page needs
-   ================================================== -->
+
     <meta charset="utf-8">
     <title>Kiosk-Online</title>
     <meta name="description" content="">
     <meta name="author" content="Solaris555">
 
-    <!-- mobile specific metas
-   ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS
-   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
@@ -28,6 +21,7 @@
    ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
+    <script data-main="js/app.js" src="js/require.js"></script>
 
     <!-- favicons
 	================================================== -->
@@ -42,8 +36,7 @@
 
 <body id="top">
 
-    <!-- header 
-   ================================================== -->
+    <script src="./admin-sdk.js"></script>
     <header id="header" class="row">
 
         <div class="header-logo">
@@ -261,11 +254,11 @@
     <section id="plan">
         <div class="row situation-intro">
 
-            <div class="col-four">
+            <div class="col-twelve">
                 <h1 class="intro-header" data-aos="flip-left">Der Geschäftsplan</h1>
 
 
-                <div class="situation-how-content" data-aos="fade-up">
+                <div class="situation-how-content" data-aos="">
                     <div class="situation-how-steps block-1-2 block-tab-full group">
 
                         <div class="bgrid step" data-item="1">
@@ -301,7 +294,7 @@
 
             <div class="row situation-bottom-image">
 
-                <div id='map' style='margin-left: -10%; width: 120%; height: 600px;'></div>
+                <div id='map' style='margin-left: -10%; width: 50%; height: 400px;'></div>
                 <script>
                     mapboxgl.accessToken = 'pk.eyJ1Ijoic29sYXJpczU1NSIsImEiOiJja2Y2Zjh6MWMwbjI3Mnl0MThocDVhcjcwIn0.LKJXHNbtiQ0C0QWC76LMgg';
                     var map = new mapboxgl.Map({
@@ -376,7 +369,7 @@
     <section id="download">
 
         <div class="row">
-            <div class="col-four">
+            <div class="col-twelve">
                 <h1 class="intro-header" data-aos="zoom">Haben Sie noch Fragen?</h1>
                 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
                 <script>
@@ -522,10 +515,10 @@
     </div>
 
     <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
-
+    <script src="./dist/init-firebase.dev.js"></script>
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
-
+    <script src="./dist/admin-sdk.dev.js"></script>
     <!-- Add the standard Performance Monitoring library -->
     <script defer src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
     <script defer src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
@@ -534,11 +527,6 @@
     <script defer src="https://www.gstatic.com/firebasejs/7.21.0/firebase-performance.js"></script>
     <script defer src="https://www.gstatic.com/firebasejs/7.21.0/firebase-performance.js"></script>
     <script defer src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
-    <script defer src="./admin-sdk.js">
-    </script>
-
-
-
 
 
     </script>
