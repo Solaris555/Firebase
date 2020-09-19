@@ -34,6 +34,10 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+    <!-- Mapbox
+	================================================== -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <body id="top">
@@ -45,21 +49,21 @@
         <div class="header-logo">
             <a href="index.html">Kiosk-Online</a>
         </div>
-
         <nav id="header-nav-wrap">
             <ul class="header-main-nav">
                 <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
                 <li><a class="smoothscroll" href="#situation" title="situation">Situation</a></li>
-                <li><a class="smoothscroll" href="#pricing" title="pricing">Preise</a></li>
-                <li><a class="smoothscroll" href="#roadmap" title="roadmap">Roadmap</a></li>
+                <li><a class="smoothscroll" href="#plan" title="plan">Vorhaben</a></li>
+                <li><a class="smoothscroll" href="#karte" title="karte">Karte</a></li>
+                <li><a class="smoothscroll" href="#form" title="form">Kontaktformular</a></li>
+                <li><a class="smoothscroll" href="#testimonials" title="testimonials">Testimonials</a></li>
                 <li><a class="smoothscroll" href="#download" title="download">Download</a></li>
             </ul>
 
-            <a href="#" title="sign-up" class="button button-primary cta">Anmeldung</a>
+            <a href="#" title="sign-up" class="button button-primary cta">Sign Up</a>
         </nav>
 
         <a class="header-menu-toggle" href="#"><span>Menu</span></a>
-
     </header>
     <!-- /header -->
 
@@ -133,10 +137,10 @@
         <div class="row situation-intro">
 
             <div class="col-four">
-                <h1 class="intro-header" data-aos="fade-up">Die Situation:</h1>
+                <h1 class="intro-header" data-aos="zoom">Die Situation:</h1>
             </div>
             <div class="col-eight">
-                <p class="lead" data-aos="fade-up">
+                <p class="lead" data-aos="zoom">
                     Abends ab 22Uhr ist es schwierig geworden an Waren des täglichen Bedarfs zu gelangen. Es gibt wenige Kiosks oder Tankstellen die noch geöffnet haben. Preise dort sind virl zu hoch. Die Infrastruktur kommt in den folgenden Stunden zum erliegen. Gerade
                     bei digitalen Angeboten ist Krefeld nicht gut aufgestellt.
                 </p>
@@ -148,7 +152,7 @@
 
             <div class="features-list block-1-3 block-m-1-2 block-mob-full group">
 
-                <div class="bgrid feature" data-aos="fade-up">
+                <div class="bgrid feature" data-aos="zoom">
 
                     <span class="icon"><i class="icon-window"></i></span>
 
@@ -165,7 +169,7 @@
                 </div>
                 <!-- /bgrid -->
 
-                <div class="bgrid feature" data-aos="fade-up">
+                <div class="bgrid feature" data-aos="zoom">
 
                     <span class="icon"><i class="icon-image"></i></span>
 
@@ -182,7 +186,7 @@
                 </div>
                 <!-- /bgrid -->
 
-                <div class="bgrid feature" data-aos="fade-up">
+                <div class="bgrid feature" data-aos="zoom">
 
                     <span class="icon"><i class="icon-paint-brush"></i></span>
 
@@ -198,7 +202,7 @@
                 </div>
                 <!-- /bgrid -->
 
-                <div class="bgrid feature" data-aos="fade-up">
+                <div class="bgrid feature" data-aos="zoom">
 
                     <span class="icon"><i class="icon-file"></i></span>
 
@@ -214,7 +218,7 @@
                 </div>
                 <!-- /bgrid -->
 
-                <div class="bgrid feature" data-aos="fade-up">
+                <div class="bgrid feature" data-aos="zoom">
 
                     <span class="icon"><i class="icon-sliders"></i></span>
 
@@ -229,7 +233,7 @@
                 </div>
                 <!-- /bgrid -->
 
-                <div class="bgrid feature" data-aos="fade-up">
+                <div class="bgrid feature" data-aos="zoom">
 
                     <span class="icon"><i class="icon-gift"></i></span>
 
@@ -249,131 +253,66 @@
             <!-- end features-list -->
 
         </div>
+        <div class="row situation-how"></div>
         <!-- end situation-features -->
-
-        <div class="row situation-how">
-
-            <h1 class="intro-header" data-aos="fade-up">How The App Works?</h1>
-
-            <div class="situation-how-content" data-aos="fade-up">
-                <div class="situation-how-steps block-1-2 block-tab-full group">
-
-                    <div class="bgrid step" data-item="1">
-                        <h3>Sign-Up</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                        </p>
-                    </div>
-
-                    <div class="bgrid step" data-item="2">
-                        <h3>Upload</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                        </p>
-                    </div>
-
-                    <div class="bgrid step" data-item="3">
-                        <h3>Create</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                        </p>
-                    </div>
-
-                    <div class="bgrid step" data-item="4">
-                        <h3>Publish</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-            <!-- end situation-how-content -->
-
-        </div>
-        <!-- end situation-how -->
-
-        <div class="row situation-bottom-image">
-
-            <img src="images/app-screens-1200.png" srcset="images/app-screens-600.png 600w, 
-                        images/app-screens-1200.png 1200w, 
-                        images/app-screens-2800.png 2800w" sizes="(max-width: 2800px) 100vw, 2800px" alt="App Screenshots" data-aos="fade-up">
-
-        </div>
-        <!-- end situation-bottom-image -->
-
     </section>
-    <!-- end situation -->
-
-
-    <!-- pricing
-   
-    <section id="pricing">
-        <div class="row pricing-content">
-
-            <div class="col-four pricing-intro">
-                <h1 class="intro-header" data-aos="fade-up">Our Pricing Options</h1>
-
-                <p data-aos="fade-up">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis
-                    unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                </p>
-            </div>
-
-            <div class="col-eight pricing-table">
-                <div class="row">
-
-                    <div class="col-six plan-wrap">
-                        <div class="plan-block" data-aos="fade-up">
-
-                            <div class="plan-top-part">
-                                <h3 class="plan-block-title">Lite Plan</h3>
-                                <p class="plan-block-price"><sup>$</sup>25</p>
-                                <p class="plan-block-per">Per Month</p>
-                            </div>
-
-                            <div class="plan-bottom-part">
-                                <ul class="plan-block-features">
-                                    <li><span>3GB</span> Storage</li>
-                                    <li><span>10GB</span> Bandwidth</li>
-                                    <li><span>5</span> Databases</li>
-                                    <li><span>30</span> Email Accounts</li>
-                                </ul>
-
-                                <a class="button button-primary large" href="">Get Started</a>
-                            </div>
-
-                        </div>
-                    </div>
-                   end plan-wrap
-                  
-    <div class="col-six plan-wrap">
-        <div class="plan-block primary" data-aos="fade-up">
-
-            <div class="plan-top-part">
-                <h3 class="plan-block-title">Pro Plan</h3>
-                <p class="plan-block-price"><sup>$</sup>50</p>
-                <p class="plan-block-per">Per Month</p>
-            </div>
-
-            <div class="plan-bottom-part">
-                <ul class="plan-block-features">
-                    <li><span>5GB</span> Storage</li>
-                    <li><span>20GB</span> Bandwidth</li>
-                    <li><span>15</span> Databases</li>
-                    <li><span>70</span> Email Accounts</li>
-                </ul>
-
-                <a class="button button-primary large" href="">Get Started</a>
-            </div>
-
-        </div>
-    </div>
-   end plan-wrap
+    <!-- Plan
     ================================================== -->
-    </div>
-    </div>
-    <!-- end pricing-table -->
+    <section id="plan">
+        <div class="row situation-intro">
 
-    </div>
-    <!-- end pricing-content -->
+            <div class="col-four">
+                <h1 class="intro-header" data-aos="flip-left">Der Geschäftsplan</h1>
+
+
+                <div class="situation-how-content" data-aos="fade-up">
+                    <div class="situation-how-steps block-1-2 block-tab-full group">
+
+                        <div class="bgrid step" data-item="1">
+                            <h3>Lieferdienst</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            </p>
+                        </div>
+
+                        <div class="bgrid step" data-item="2">
+                            <h3>Upload</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            </p>
+                        </div>
+
+                        <div class="bgrid step" data-item="3">
+                            <h3>Create</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            </p>
+                        </div>
+
+                        <div class="bgrid step" data-item="4">
+                            <h3>Publish</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- end situation-how-content -->
+
+            </div>
+            <!-- end situation-how -->
+
+            <div class="row situation-bottom-image">
+
+                <div id='map' style='margin-left: -10%; width: 120%; height: 600px;'></div>
+                <script>
+                    mapboxgl.accessToken = 'pk.eyJ1Ijoic29sYXJpczU1NSIsImEiOiJja2Y2Zjh6MWMwbjI3Mnl0MThocDVhcjcwIn0.LKJXHNbtiQ0C0QWC76LMgg';
+                    var map = new mapboxgl.Map({
+                        container: 'map',
+                        style: 'mapbox://styles/mapbox/streets-v11'
+                    });
+                </script>
+            </div>
+            <!-- end situation-bottom-image -->
+
     </section>
-    <!-- end pricing -->
 
 
     <!-- Testimonials Section
@@ -382,13 +321,13 @@
 
         <div class="row">
             <div class="col-twelve">
-                <h1 class="intro-header" data-aos="fade-up">Eure Meinung ist gefragt!</h1>
+                <h1 class="intro-header" data-aos="fade-right">Eure Meinung ist gefragt!</h1>
             </div>
         </div>
 
         <div class="row owl-wrap">
 
-            <div id="testimonial-slider" data-aos="fade-up">
+            <div id="testimonial-slider" data-aos="">
 
                 <div class="slides owl-carousel">
 
@@ -400,7 +339,7 @@
                         <div class="testimonial-author">
                             <img src="images/avatars/user-02.jpg" alt="Author image">
                             <div class="author-info">
-                                Steve Jobs
+                                Sören, Am Puls der Zeit
                                 <span class="position">CEO, Apple.</span>
                             </div>
                         </div>
@@ -433,18 +372,19 @@
     </section>
     <!-- end testimonials -->
 
-
-    <!-- download
-    ================================================== -->
+    <!-- start form -->
     <section id="download">
 
         <div class="row">
-            <div class="col-full">
-                <h1 class="intro-header" data-aos="fade-up">Haben Sie noch Fragen?</h1>
-
-                <p class="lead" data-aos="fade-up">
-                    Kontaktieren Sie mich unter : thorrog@gmail.com
-                </p>
+            <div class="col-four">
+                <h1 class="intro-header" data-aos="zoom">Haben Sie noch Fragen?</h1>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                <script>
+                    hbspt.forms.create({
+                        portalId: "8480497",
+                        formId: "93896ef4-737c-4368-bb9e-fc9822ced23a"
+                    });
+                </script>
 
                 <ul class="download-badges">
                     <li><a href="#" title="" class="badge-appstore" data-aos="fade-up">App Store</a></li>
@@ -455,7 +395,7 @@
         </div>
 
     </section>
-    <!-- end download -->
+    <!-- end form -->
 
 
     <!-- footer
@@ -584,30 +524,32 @@
     <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.20.-/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
 
-    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-    <script src="https://www.gstatic.com/firebasejs/7.20.-/firebase-analytics.js"></script>
+    <!-- Add the standard Performance Monitoring library -->
+    <script defer src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.21.0/firebase-functions.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.21.0/firebase-performance.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.21.0/firebase-performance.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+    <script defer src="./init-firebase.js">
+    </script>
 
-    <!-- Add Firebase products that you want to use -->
-    <script src="https://www.gstatic.com/firebasejs/7.20.-/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.20.-/firebase-firestore.js"></script>
 
 
-    <!-- Load React. -->
-    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-
-    <!-- Load our React component. -->
-    <script src="like_button.js"></script>
-
+    </script>
 
     <!-- Java Script
     ================================================== -->
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8480497.js"></script>
+    <!-- End of HubSpot Embed Code -->
 
 </body>
 
