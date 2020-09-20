@@ -1,4 +1,3 @@
-// TODO: Replace the following with your app's Firebase project configuration
 var firebaseConfig = {
     apiKey: "AIzaSyBstU_YbzbaCwLoJ6LWbzS_e0uMF3pdLqw",
     authDomain: "kiosk-online.firebaseapp.com",
@@ -10,6 +9,6 @@ var firebaseConfig = {
     measurementId: "G-WM6RF9V352"
 };
 
-// Initialize Firebase
+
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
