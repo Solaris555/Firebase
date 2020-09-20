@@ -63,11 +63,11 @@
         }
         
         body {
-            background: #141515;
+            background: #010440;
             font-family: "muli-regular", sans-serif;
             font-size: 1.6rem;
             line-height: 1.875;
-            color: #767676;
+            color: #F2E205;
             margin: 0;
             padding: 0;
         }
@@ -1064,7 +1064,6 @@
             color: #F2E205;
             position: relative;
             padding-bottom: 3.6rem;
-            
         }
         
         h1.intro-header::before {
